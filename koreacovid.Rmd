@@ -63,7 +63,16 @@ colPerc(table1)
 The proportion of females who survived the virus is 56 percent whereas the proportion of males who survived the virus is 44 percent. Conversely, 36 percent of the females died as opposed to 64 percent of males. 
 
 ## Inferential results 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
+The odds of dying if you're a male is 44/1411  
+The odds of dying if you're a female is 25/1831  
+The odds ratio is (44/1411)/(25/1831)   
+The odds of dying of the virus are 2.3 to 1  
 
 
 
